@@ -679,6 +679,111 @@ main {
 }
 
 /* ------------------------------------------------------------ *\
+	Tabs-alt
+\* ------------------------------------------------------------ */
+
+.tabs-alt {
+	display: flex;
+	--gap-x: 4rem;
+	--gap-y: 4rem;
+	margin: calc(((var(--gap-y, 0px) / 2) * -1)) calc(((var(--gap-x, 0px) / 2) * -1));
+}
+
+.tabs-alt .tabs__body,
+.tabs-alt .tabs__head {
+	padding: calc(var(--gap-y, 0px) / 2) calc(var(--gap-x, 0px) / 2);
+}
+
+.tabs-alt .tabs__head {
+	flex: 0 0 calc(35rem + var(--gap-x));
+	max-width: calc(35rem + var(--gap-x));
+}
+
+.tabs-alt .tabs__nav .btn {
+	display: block;
+	text-align: center;
+	font-size: 1.9rem;
+	padding: 3rem 2rem;
+	font-size: 1.9rem;
+	box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+}
+
+.tabs-alt .tabs__nav a:not(.btn) {
+	box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+	font-size: 1.9rem;
+	text-transform: capitalize;
+	color: #232d39;
+	padding: 3rem;
+	display: block;
+	background-color: #fff;
+	text-decoration: none;
+}
+
+.tabs-alt .tabs__nav li.current a:not(.btn) {
+	color: #ed563b;
+}
+
+.tabs-alt .tabs__nav li + li {
+	margin-top: 3rem;
+}
+
+.tabs-alt .tab h3 {
+	font-size: 2.3rem;
+    font-weight: 700;
+    color: #232d39;
+    letter-spacing: 0.5px;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+.tabs-alt .tab__entry {
+	font-size: 1.6rem;
+	color: #000;
+	margin-bottom: 1.5rem;
+}
+
+.tabs-alt .tab__actions ul {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	--gap-x: .6rem;
+	--gap-y: .6rem;
+	margin: calc(((var(--gap-y, 0px) / 2) * -1)) calc(((var(--gap-x, 0px) / 2) * -1));
+	list-style-type: none;
+}
+
+.tabs-alt .tab__actions li {
+	padding: calc(var(--gap-y, 0px) / 2) calc(var(--gap-x, 0px) / 2);
+}
+
+/* ------------------------------------------------------------ *\
+	Footer
+\* ------------------------------------------------------------ */
+
+.footer {
+	background-color: #fff;
+	color: #232d39;
+    font-size: 14px;
+	padding: 3rem 0;
+	text-align: center;
+	line-height: 1.5625;
+}
+
+.footer p {
+	margin-bottom: 0;
+}
+
+.footer a {
+	text-decoration: none;
+	color: #ed563b;
+	transition: opacity var(--t-duration);
+}
+
+.footer a:hover {
+	opacity: .6;
+}
+
+/* ------------------------------------------------------------ *\
 	Helpers
 \* ------------------------------------------------------------ */
 

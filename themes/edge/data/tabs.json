@@ -18,7 +18,7 @@
 					}
 				],
 				"outcome": "Page Displaying Hello World from EdgeWorkers.",
-				"content": "./js/helloWorld.js"
+				"content": "js/helloWorld.js"
 			},
 			{
 				"id": "GeoLocation",
@@ -35,7 +35,7 @@
 					}
 				],
 				"outcome": "Location information about the client where the request originates.",
-				"content": "./js/onClientRequest.js"
+				"content": "js/onClientRequest.js"
 			},
 			{
 				"id": "Commerce Categories",
@@ -52,7 +52,7 @@
 					}
 				],
 				"outcome": "Return JSON reponse for the selected item.",
-				"content": "./js/urlSearchParams.js"
+				"content": "js/urlSearchParams.js"
 			},
 			{
 				"id": "JA3 Fingerprinting",
@@ -69,7 +69,7 @@
 					}
 				],
 				"outcome": "The EdgeWorkers code gets TLS ClientHello data from <strong>PMUSER_TLS_CLIENT_HELLO</strong> and sets JA3 Fingerprint to <strong>PMUSER_JA3_FINGERPRINT</strong>",
-				"content": "./js/ja3-fingerprinting.js"
+				"content": "js/ja3-fingerprinting.js"
 			},
 			{
 				"id": "CSP",
@@ -90,7 +90,7 @@
 					}
 				],
 				"outcome": "For every request a nonce is generated, added to the CSP header, and then injected into the HTML source.",
-				"content": "./js/csp.js"
+				"content": "js/csp.js"
 			}
 		]
 	  },
@@ -112,7 +112,7 @@
 					}
 				],
 				"outcome": "Location information about the client where the request originates.",
-				"content": "./js/onClientRequest.js"
+				"content": "js/onClientRequest.js"
 			},
 			{
 				"id": "Commerce Categories",
@@ -129,7 +129,7 @@
 					}
 				],
 				"outcome": "Return JSON reponse for the selected item.",
-				"content": "./js/urlSearchParams.js"
+				"content": "js/urlSearchParams.js"
 			}
 		]
 	  }

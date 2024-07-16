@@ -18,7 +18,7 @@ function toggleTab($trigger) {
 		.hide();
 }
 
-$('.js-tabs > .tabs__head .tabs__nav a').on('click', function(e) {
+$('.js-tabs > .tabs__head .tabs__nav a:not(.btn)').on('click', function(e) {
 	e.preventDefault();
 
 	toggleTab($(this));
@@ -52,7 +52,7 @@ $('pre[data-ajax]').each(function() {
 	const url = $(this).data('ajax');
 	const $codeContainer = $(this).find('code');
 
-	fetchCodeBlock(`.${url}`)
+	fetchCodeBlock(`${url}`)
 		.then(codeBlocks => {
 			$codeContainer.text(codeBlocks);
 
