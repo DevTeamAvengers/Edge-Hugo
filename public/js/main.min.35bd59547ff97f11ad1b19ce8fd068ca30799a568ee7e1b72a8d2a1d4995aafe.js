@@ -1,0 +1,1 @@
+function toggleTab(e){const t=e.closest(".js-tabs"),n=t.find(" > .tabs__body .tab").eq(e.parent().index());e.parent().addClass("current").siblings().removeClass("current"),console.log(e),console.log(n)}$(".js-tabs > .tabs__head .tabs__nav a").on("click",function(e){e.preventDefault(),toggleTab($(this))}),console.log("this")

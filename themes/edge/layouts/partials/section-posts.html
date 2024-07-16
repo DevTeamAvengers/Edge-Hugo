@@ -1,0 +1,7 @@
+<section class="section-posts">
+	<div class="shell">
+		{{ range where .Site.RegularPages "Section" "posts" }}
+			{{/*  {{ partial "common/button.html" (dict "text" .Title "url" "#" "class" "btn btn--block") }}  */}}
+		{{ end }}
+	</div><!-- /.shell -->
+</section><!-- /.section- -->

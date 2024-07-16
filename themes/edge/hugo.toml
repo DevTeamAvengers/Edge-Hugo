@@ -1,0 +1,33 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+
+[[menus.main]]
+name = 'Use Cases'
+url = '#use-cases'
+weight = 10
+
+[[menus.main]]
+name = 'Solutions'
+url = '#solutions'
+weight = 20
+
+[[menus.main]]
+name = 'EdgeWorkers User Guide'
+url = 'https://techdocs.akamai.com/edgeworkers/docs/welcome-to-edgeworkers'
+weight = 30
+
+[[menus.main]]
+name = 'EdgeKV User Guide'
+url = 'https://techdocs.akamai.com/edgekv/docs/welcome-to-edgekv'
+weight = 40
+
+[[menus.main]]
+name = 'Link to GitHub'
+url = 'https://github.com/akamai/edgeworkers-examples'
+weight = 50
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"

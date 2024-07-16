@@ -1,0 +1,13 @@
+<div class="shell">
+	<div class="header__inner">
+		<a href="{{- printf "%s" site.BaseURL }}" class="logo">
+			<img src="{{ absURL "logo.png" }}">
+		</a>
+
+		<div class="header__nav">
+			{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+
+			{{/*  {{ partial "common/button.html" (dict "text" "Read More" "url" .Permalink "class" "btn btn-primary") }}  */}}
+		</div><!-- /.header__nav -->
+	</div><!-- /.header__inner -->
+</div><!-- /.shell -->

@@ -1,0 +1,32 @@
+{{ define "main" }}
+  	{{ .Content }}
+
+	{{ partial "section-posts.html" . }}
+
+	{{ partial "section-intro.html" (index .Site.Data.intros "intro-1") }}
+
+	<section class="section-tabs">
+		<div class="shell shell--large">
+			<header class="section__head">
+				<h2>USE CASES</h2>
+
+				{{ with .Resources.GetMatch "line-dec.webp" }}
+					{{ $img := . }}
+					{{ printf "Image found: %s" $img.Permalink | safeHTML }}
+
+					<img src="{{ .RelPermalink }}">
+				{{ end }}
+
+				<p>Checkout some of the use cases below for both EdgeWorkers & EdgeKV working in action.</p>
+			</header><!-- /.section__head -->
+
+			{{ partial "tabs.html" . }}
+		</div><!-- /.shell -->
+	</section>
+
+	<section class="section-tabs bg--gray">
+		<div class="shell shell--large">
+
+		</div><!-- /.shell -->
+	</section><!-- /.section- -->
+{{ end }}

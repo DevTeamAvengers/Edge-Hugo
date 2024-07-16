@@ -1,0 +1,9 @@
+{{ $title := .title | safeHTML }}
+
+<section class="section-intro">
+  <div class="shell">
+    <h2>{{ $title }}</h2>
+
+	<div>{{ .content | markdownify }}</div>
+  </div><!-- /.shell -->
+</section><!-- /.section-intro -->

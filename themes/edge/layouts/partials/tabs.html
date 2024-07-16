@@ -1,0 +1,19 @@
+{{ $tabs := .Site.Data.tabs.tabs }}
+
+<div class="tabs js-tabs">
+    <div class="tabs__head">
+        {{ partial "tabs-nav.html" (dict "Tabs" $tabs) }}
+    </div><!-- /.tabs__head -->
+
+    <div class="tabs__body">
+        {{ if not $tabs }}
+            <p>No tabs data found.</p>
+        {{ else }}
+            {{ range $index, $tab := $tabs }}
+                <div class="tab" {{ if eq $index 0 }}style="display: block;"{{ end }}>
+                    {{ partial "secondary-tabs.html" (dict "SecondaryTabs" $tab.secondaryTabs) }}
+                </div><!-- /.tab -->
+            {{ end }}
+        {{ end }}
+    </div><!-- /.tabs__body -->
+</div><!-- /.tabs js-tabs -->

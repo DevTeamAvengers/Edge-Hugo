@@ -1,0 +1,102 @@
+{
+	"tabs": [
+	  {
+		"id": "EdgeWorkers",
+		"secondaryTabs": [
+			{
+				"id": "HelloWorld",
+				"title": "HelloWorld using EdgeWorkers",
+				"text": "With this example you learn the basics of creating, deploying and debugging an EdgeWorker that generates a simple html page at the Edge and adds a response header.",
+				"buttons": [
+					{
+						"href": "https://example.com",
+						"text": "View this example on Github"
+					},
+					{
+						"href": "https://example.com",
+						"text": "Click here to see the demo !!"
+					}
+				],
+				"outcome": "Page Displaying Hello World from EdgeWorkers.",
+				"content": "/js/helloWorld.js"
+			},
+			{
+				"id": "GeoLocation",
+				"title": "GeoLocation using EdgeWorkers",
+				"text": "This example implements a microservice GEO-Location API call that returns location information about the client where the request originates.",
+				"buttons": [
+					{
+						"href": "https://example.com",
+						"text": "View this example on Github"
+					},
+					{
+						"href": "https://example.com",
+						"text": "Click here to see the demo !!"
+					}
+				],
+				"outcome": "Location information about the client where the request originates.",
+				"content": "/js/onClientRequest.js"
+			},
+			{
+				"id": "Commerce Categories",
+				"title": "E-commerce Categories using EdgeWorkers",
+				"text": "This use-case is the projection forward of a whole endpoint from origin, perhaps useful for slow-changing and simple data that can be statically included in the code.This EdgeWorker tests for /commerce/categories in the URI path in order to act. It will then respond to a GET parameter named search by running a case-insensitive regex against each title and desc field, and a numeric comparison against each id, and returning an array of matching category entities, serialized as JSON. Because the response is generated at the Edge, origin will not be contacted, and the request will be fully resolved at the first Edge server that answers it.",
+				"buttons": [
+					{
+						"href": "https://example.com",
+						"text": "View this example on Github"
+					},
+					{
+						"href": "https://example.com",
+						"text": "Click here to see the demo !!"
+					}
+				],
+				"outcome": "Return JSON reponse for the selected item.",
+				"content": "/js/urlSearchParams.js"
+			},
+			{
+				"id": "JA3 Fingerprinting",
+				"title": "JA3 Fingerprinting using EdgeWorkers",
+				"text": "Calculates JA3 Fingerprint using EdgeWorkers.TLS fingerprinting is a technique that associates TLS library with parameters from a TLS ClientHello via a database of curated fingerprints to identify malware and vulnerable applications for better network visibility. JA3 algorithm takes a collection of settings from the SSL “ClientHello” such as SSL/TLS version, accepted cipher suites, list of extensions, accepted elliptical curves/formats, as well as others. For compactness, the JA3 string is hashed with MD5. The idea here is to calculate JA3 Fingerprint using EdgeWorkers so that customers can deny requests from services with suspicious JA3 Fingerprint and credentials, without contacting origin servers even on cacheable contents.",
+				"buttons": [
+					{
+						"href": "https://example.com",
+						"text": "View this example on Github"
+					},
+					{
+						"href": "https://example.com",
+						"text": "Click here to see the demo !!"
+					}
+				],
+				"outcome": "The EdgeWorkers code gets TLS ClientHello data from <strong>PMUSER_TLS_CLIENT_HELLO</strong> and sets JA3 Fingerprint to <strong>PMUSER_JA3_FINGERPRINT</strong>",
+				"content": "/js/ja3-fingerprinting.js"
+			},
+			{
+				"id": "CSP",
+				"title": "Use a Content Security Policy to cut latency, not security",
+				"text": "A Content Security Policy (CSP) is a security feature implemented in web browsers. It protects websites and web applications from attacks such as cross-site scripting (XSS) and data injection. To provide protection, CSP controls and limits the source of the various types of content loaded and executed on a web page. This content includes scripts, stylesheets, and images.EdgeWorkers provides numerous performance benefits for CSPs. These policies also need to complement the security measures on the application server-side.\n<br><br>Note: You can find the <strong><em>cspPolicyParser.js</em></strong> in the link to Github",
+				"buttons": [
+					{
+						"href": "https://example.com",
+						"text": "View this example on Github"
+					},
+					{
+						"href": "https://example.com",
+						"text": "View the Developer Blog Post"
+					},
+					{
+						"href": "https://example.com",
+						"text": "Click here to see the demo !!"
+					}
+				],
+				"outcome": "For every request a nonce is generated, added to the CSP header, and then injected into the HTML source.",
+				"content": "/js/csp.js"
+			}
+		]
+	  },
+	  {
+		"id": "EdgeKV",
+		"content": "Content for Tab 2"
+	  }
+	]
+}

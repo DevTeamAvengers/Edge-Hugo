@@ -1,0 +1,36 @@
+<div class="tab" {{ if eq .Index 0 }}style="display: block;"{{ end }}>
+    {{ if .Tab.title }}<h3>{{ .Tab.title }}</h3>{{ end }}
+
+    {{ if .Tab.text }}
+        <div class="tab__entry">
+            {{ .Tab.text | safeHTML }}
+        </div><!-- /.tab__entry -->
+    {{ end }}
+
+    <div class="tab__content">
+        {{ if .Tab.text }}
+            <div class="tab__info">
+                <h4>Outcome:</h4>
+                {{ .Tab.outcome | safeHTML }}
+            </div><!-- /.tab__info -->
+        {{ end }}
+
+        {{ if .Tab.buttons }}
+            <div class="tab__actions">
+                <ul>
+                    {{ range $buttonIndex, $button := .Tab.buttons }}
+                        <li>
+                            {{ partial "common/button.html" (dict "text" $button.text "url" $button.href) }}
+                        </li>
+                    {{ end }}
+                </ul>
+            </div><!-- /.tab__actions -->
+        {{ end }}
+    </div><!-- /.tab__content -->
+
+    {{ if .Tab.content }}
+        <div class="tab__code">
+            <pre class="language-js" data-prismjs-copy="Copy Code" data-ajax="{{ .Tab.content }}"><code>Loading...</code></pre>
+		</div><!-- /.tab__code -->
+    {{ end }}
+</div><!-- /.tab -->

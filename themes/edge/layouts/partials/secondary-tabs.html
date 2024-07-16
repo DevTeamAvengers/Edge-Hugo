@@ -1,0 +1,11 @@
+<div class="tabs-secondary js-tabs">
+    <div class="tabs__head">
+        {{ partial "tabs-nav.html" (dict "Tabs" .SecondaryTabs) }}
+    </div><!-- /.tabs__head -->
+
+    <div class="tabs__body">
+        {{ range $secondaryIndex, $secondaryTab := .SecondaryTabs }}
+            {{ partial "tab-content.html" (dict "Index" $secondaryIndex "Tab" $secondaryTab) }}
+        {{ end }}
+    </div><!-- /.tabs__body -->
+</div><!-- /.tabs js-tabs -->

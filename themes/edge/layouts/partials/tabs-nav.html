@@ -1,0 +1,15 @@
+{{ $tabs := .Tabs }}
+
+<nav class="tabs__nav">
+    <ul>
+        {{/*  {{ if not $tabs }}  */}}
+            {{/*  <p>No tabs data found.</p>  */}}
+        {{/*  {{ else }}  */}}
+            {{ range $index, $tab := $tabs }}
+                <li class="{{ if eq $index 0 }}current{{ end }}">
+                    <a href="#{{ $tab.id }}">{{ $tab.id }}</a>
+                </li>
+            {{ end }}
+        {{/*  {{ end }}  */}}
+    </ul>
+</nav><!-- /.nav tabs__nav -->

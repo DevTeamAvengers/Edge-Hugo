@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ or site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+		  {{ partial "header.html" . }}
+		</header>
+
+		<main class="main">
+		  {{ block "main" . }}{{ end }}
+		</main>
+
+		<footer class="footer">
+		  {{ partial "footer.html" . }}
+		</footer>
+	</div><!-- /.wrapper -->
+
+	<!-- Process and include JavaScript -->
+    {{ $js := resources.Get "js/main.js" | minify | fingerprint }}
+    <script src="{{ $js.Permalink }}"></script>
+</body>
+</html>

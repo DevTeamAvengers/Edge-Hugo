@@ -1,0 +1,11 @@
+{{/*
+	Button.
+*/}}
+
+{{- $text := .text | default "Click Me" -}}
+{{- $url := .url | default "#" -}}
+{{- $class := .class | default "btn" -}}
+
+<a href="{{ $url }}" class="{{ $class }}">
+  {{ $text }}
+</a>

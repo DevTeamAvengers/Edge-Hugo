@@ -1,0 +1,4 @@
+{
+	"title": "Welcome to <em>Akamai</em> Edge <em>Compute</em> demo site!",
+	"content": "Powered by [![Logo Linode](logo-linode.png)](https://www.google.com) \n\nLearn how you could leverage Akamai Edge Computing solutions to boost performance and create great user experience by enabling developers to build web applications closer to end users. Also learn various ways you can implement Edge Compute into your site or web application.\n\nThese examples illustrate how you can use Akamai serverless solutions to create great user experiences for your users. Click on each use case to review a code snippet and a live example, or head over to Github to see the full source code.\n"
+}

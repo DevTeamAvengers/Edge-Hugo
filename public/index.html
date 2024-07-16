@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+	<meta name="generator" content="Hugo 0.127.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>My New Hugo Site</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/prism.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/toolbar/prism-toolbar.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+      <script src="/js/main.js"></script>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+		  <div class="shell">
+	<div class="header__inner">
+		<a href="http://localhost:1313/" class="logo">
+			<img src="http://localhost:1313/logo.png">
+		</a>
+
+		<div class="header__nav">
+			
+  <nav class="nav">
+    <ul>
+
+	<li>
+      <a href="#use-cases">Use Cases</a>
+    </li>
+
+	<li>
+      <a href="#solutions">Solutions</a>
+    </li>
+
+	<li>
+      <a class=" btn" href="https://techdocs.akamai.com/edgeworkers/docs/welcome-to-edgeworkers" target="_blank">EdgeWorkers User Guide</a>
+    </li>
+
+	<li>
+      <a class=" btn" href="https://techdocs.akamai.com/edgekv/docs/welcome-to-edgekv" target="_blank">EdgeKV User Guide</a>
+    </li>
+
+	<li>
+      <a class=" btn" href="https://github.com/akamai/edgeworkers-examples" target="_blank">Link to GitHub</a>
+    </li>
+    </ul>
+  </nav>
+
+
+			
+		</div>
+	</div>
+</div>
+
+		</header>
+
+		<main class="main">
+		  
+  	
+
+	<section class="section-posts">
+	<div class="shell">
+		
+			
+		
+			
+		
+			
+		
+	</div>
+</section>
+
+
+	
+
+<section class="section-intro">
+  <div class="shell">
+    <h2>Welcome to <em>Akamai</em> Edge <em>Compute</em> demo site!</h2>
+
+	<div><p>Powered by <a href="https://www.google.com"><img src="logo-linode.png" alt="Logo Linode"></a></p>
+<p>Learn how you could leverage Akamai Edge Computing solutions to boost performance and create great user experience by enabling developers to build web applications closer to end users. Also learn various ways you can implement Edge Compute into your site or web application.</p>
+<p>These examples illustrate how you can use Akamai serverless solutions to create great user experiences for your users. Click on each use case to review a code snippet and a live example, or head over to Github to see the full source code.</p>
+</div>
+  </div>
+</section>
+
+
+	<section class="section-tabs">
+		<div class="shell shell--large">
+			<header class="section__head">
+				<h2>USE CASES</h2>
+
+				
+
+				<p>Checkout some of the use cases below for both EdgeWorkers & EdgeKV working in action.</p>
+			</header>
+
+			
+
+<div class="tabs js-tabs">
+    <div class="tabs__head">
+        
+
+<nav class="tabs__nav">
+    <ul>
+        
+            
+        
+            
+                <li class="current">
+                    <a href="#EdgeWorkers">EdgeWorkers</a>
+                </li>
+            
+                <li class="">
+                    <a href="#EdgeKV">EdgeKV</a>
+                </li>
+            
+        
+    </ul>
+</nav>
+
+    </div>
+
+    <div class="tabs__body">
+        
+            
+                <div class="tab" style="display: block;">
+                    <div class="tabs-secondary js-tabs">
+    <div class="tabs__head">
+        
+
+<nav class="tabs__nav">
+    <ul>
+        
+            
+        
+            
+                <li class="current">
+                    <a href="#HelloWorld">HelloWorld</a>
+                </li>
+            
+                <li class="">
+                    <a href="#GeoLocation">GeoLocation</a>
+                </li>
+            
+                <li class="">
+                    <a href="#Commerce%20Categories">Commerce Categories</a>
+                </li>
+            
+                <li class="">
+                    <a href="#JA3%20Fingerprinting">JA3 Fingerprinting</a>
+                </li>
+            
+                <li class="">
+                    <a href="#CSP">CSP</a>
+                </li>
+            
+        
+    </ul>
+</nav>
+
+    </div>
+
+    <div class="tabs__body">
+        
+            <div class="tab" style="display: block;">
+    <h3>HelloWorld using EdgeWorkers</h3>
+
+    
+        <div class="tab__entry">
+            With this example you learn the basics of creating, deploying and debugging an EdgeWorker that generates a simple html page at the Edge and adds a response header.
+        </div>
+    
+
+    <div class="tab__content">
+        
+            <div class="tab__info">
+                <h4>Outcome:</h4>
+                Page Displaying Hello World from EdgeWorkers.
+            </div>
+        
+
+        
+            <div class="tab__actions">
+                <ul>
+                    
+                        <li>
+                            <a href="https://example.com" class="btn">
+  View this example on Github
+</a>
+
+                        </li>
+                    
+                        <li>
+                            <a href="https://example.com" class="btn">
+  Click here to see the demo !!
+</a>
+
+                        </li>
+                    
+                </ul>
+            </div>
+        
+    </div>
+
+    
+        <div class="tab__code">
+            <pre class="language-js" data-prismjs-copy="Copy Code" data-ajax="/js/helloWorld.js"><code>Loading...</code></pre>
+		</div>
+    
+</div>
+
+        
+            <div class="tab" >
+    <h3>GeoLocation using EdgeWorkers</h3>
+
+    
+        <div class="tab__entry">
+            This example implements a microservice GEO-Location API call that returns location information about the client where the request originates.
+        </div>
+    
+
+    <div class="tab__content">
+        
+            <div class="tab__info">
+                <h4>Outcome:</h4>
+                Location information about the client where the request originates.
+            </div>
+        
+
+        
+            <div class="tab__actions">
+                <ul>
+                    
+                        <li>
+                            <a href="https://example.com" class="btn">
+  View this example on Github
+</a>
+
+                        </li>
+                    
+                        <li>
+                            <a href="https://example.com" class="btn">
+  Click here to see the demo !!
+</a>
+
+                        </li>
+                    
+                </ul>
+            </div>
+        
+    </div>
+
+    
+        <div class="tab__code">
+            <pre class="language-js" data-prismjs-copy="Copy Code" data-ajax="/js/onClientRequest.js"><code>Loading...</code></pre>
+		</div>
+    
+</div>
+
+        
+            <div class="tab" >
+    <h3>E-commerce Categories using EdgeWorkers</h3>
+
+    
+        <div class="tab__entry">
+            This use-case is the projection forward of a whole endpoint from origin, perhaps useful for slow-changing and simple data that can be statically included in the code.This EdgeWorker tests for /commerce/categories in the URI path in order to act. It will then respond to a GET parameter named search by running a case-insensitive regex against each title and desc field, and a numeric comparison against each id, and returning an array of matching category entities, serialized as JSON. Because the response is generated at the Edge, origin will not be contacted, and the request will be fully resolved at the first Edge server that answers it.
+        </div>
+    
+
+    <div class="tab__content">
+        
+            <div class="tab__info">
+                <h4>Outcome:</h4>
+                Return JSON reponse for the selected item.
+            </div>
+        
+
+        
+            <div class="tab__actions">
+                <ul>
+                    
+                        <li>
+                            <a href="https://example.com" class="btn">
+  View this example on Github
+</a>
+
+                        </li>
+                    
+                        <li>
+                            <a href="https://example.com" class="btn">
+  Click here to see the demo !!
+</a>
+
+                        </li>
+                    
+                </ul>
+            </div>
+        
+    </div>
+
+    
+        <div class="tab__code">
+            <pre class="language-js" data-prismjs-copy="Copy Code" data-ajax="/js/urlSearchParams.js"><code>Loading...</code></pre>
+		</div>
+    
+</div>
+
+        
+            <div class="tab" >
+    <h3>JA3 Fingerprinting using EdgeWorkers</h3>
+
+    
+        <div class="tab__entry">
+            Calculates JA3 Fingerprint using EdgeWorkers.TLS fingerprinting is a technique that associates TLS library with parameters from a TLS ClientHello via a database of curated fingerprints to identify malware and vulnerable applications for better network visibility. JA3 algorithm takes a collection of settings from the SSL “ClientHello” such as SSL/TLS version, accepted cipher suites, list of extensions, accepted elliptical curves/formats, as well as others. For compactness, the JA3 string is hashed with MD5. The idea here is to calculate JA3 Fingerprint using EdgeWorkers so that customers can deny requests from services with suspicious JA3 Fingerprint and credentials, without contacting origin servers even on cacheable contents.
+        </div>
+    
+
+    <div class="tab__content">
+        
+            <div class="tab__info">
+                <h4>Outcome:</h4>
+                The EdgeWorkers code gets TLS ClientHello data from <strong>PMUSER_TLS_CLIENT_HELLO</strong> and sets JA3 Fingerprint to <strong>PMUSER_JA3_FINGERPRINT</strong>
+            </div>
+        
+
+        
+            <div class="tab__actions">
+                <ul>
+                    
+                        <li>
+                            <a href="https://example.com" class="btn">
+  View this example on Github
+</a>
+
+                        </li>
+                    
+                        <li>
+                            <a href="https://example.com" class="btn">
+  Click here to see the demo !!
+</a>
+
+                        </li>
+                    
+                </ul>
+            </div>
+        
+    </div>
+
+    
+        <div class="tab__code">
+            <pre class="language-js" data-prismjs-copy="Copy Code" data-ajax="/js/ja3-fingerprinting.js"><code>Loading...</code></pre>
+		</div>
+    
+</div>
+
+        
+            <div class="tab" >
+    <h3>Use a Content Security Policy to cut latency, not security</h3>
+
+    
+        <div class="tab__entry">
+            A Content Security Policy (CSP) is a security feature implemented in web browsers. It protects websites and web applications from attacks such as cross-site scripting (XSS) and data injection. To provide protection, CSP controls and limits the source of the various types of content loaded and executed on a web page. This content includes scripts, stylesheets, and images.EdgeWorkers provides numerous performance benefits for CSPs. These policies also need to complement the security measures on the application server-side.
+<br><br>Note: You can find the <strong><em>cspPolicyParser.js</em></strong> in the link to Github
+        </div>
+    
+
+    <div class="tab__content">
+        
+            <div class="tab__info">
+                <h4>Outcome:</h4>
+                For every request a nonce is generated, added to the CSP header, and then injected into the HTML source.
+            </div>
+        
+
+        
+            <div class="tab__actions">
+                <ul>
+                    
+                        <li>
+                            <a href="https://example.com" class="btn">
+  View this example on Github
+</a>
+
+                        </li>
+                    
+                        <li>
+                            <a href="https://example.com" class="btn">
+  View the Developer Blog Post
+</a>
+
+                        </li>
+                    
+                        <li>
+                            <a href="https://example.com" class="btn">
+  Click here to see the demo !!
+</a>
+
+                        </li>
+                    
+                </ul>
+            </div>
+        
+    </div>
+
+    
+        <div class="tab__code">
+            <pre class="language-js" data-prismjs-copy="Copy Code" data-ajax="/js/csp.js"><code>Loading...</code></pre>
+		</div>
+    
+</div>
+
+        
+    </div>
+</div>
+
+                </div>
+            
+                <div class="tab" >
+                    <div class="tabs-secondary js-tabs">
+    <div class="tabs__head">
+        
+
+<nav class="tabs__nav">
+    <ul>
+        
+            
+        
+            
+        
+    </ul>
+</nav>
+
+    </div>
+
+    <div class="tabs__body">
+        
+    </div>
+</div>
+
+                </div>
+            
+        
+    </div>
+</div>
+
+		</div>
+	</section>
+
+	<section class="section-tabs bg--gray">
+		<div class="shell shell--large">
+
+		</div>
+	</section>
+
+		</main>
+
+		<footer class="footer">
+		  
+
+		</footer>
+	</div>
+
+	
+    
+    <script src="http://localhost:1313/js/main.min.4d50fdf3717bc7155bf05c485def1ff20cea6801d289d6ff4af76b3b5739d73e.js"></script>
+</body>
+</html>
