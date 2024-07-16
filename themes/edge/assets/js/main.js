@@ -24,7 +24,12 @@ $('.js-tabs > .tabs__head .tabs__nav a').on('click', function(e) {
 	toggleTab($(this));
 });
 
-function fetchJsonString(url) {
+/**
+ * Fetch code block.
+ * @param {String} url
+ * @returns {Promise}
+ */
+function fetchCodeBlock(url) {
     return new Promise((resolve, reject) => {
         $.ajax({
             url: url,
@@ -47,7 +52,7 @@ $('pre[data-ajax]').each(function() {
 	const url = $(this).data('ajax');
 	const $codeContainer = $(this).find('code');
 
-	fetchJsonString(url)
+	fetchCodeBlock(`.${url}`)
 		.then(codeBlocks => {
 			$codeContainer.text(codeBlocks);
 
@@ -56,4 +61,22 @@ $('pre[data-ajax]').each(function() {
 		.catch(error => {
 			console.error(error);
 		});
-})
+});
+
+/**
+ * Set CSS Variable.
+ * @param {String} name
+ * @param {Number} value
+ * @param {String} unit
+ * @param {jQuery} $element
+ * @returns {Void}
+ */
+function setCSSVariable(name, value, unit = '', $element = $('html')) {
+	$element.css(`--${name}`, `${value}${unit}`);
+}
+
+setCSSVariable('header-height', $('.header').outerHeight(), 'px');
+
+$(window).on('resize', function(e) {
+	setCSSVariable('header-height', $('.header').outerHeight(), 'px');
+});

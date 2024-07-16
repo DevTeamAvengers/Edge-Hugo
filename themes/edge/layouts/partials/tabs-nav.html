@@ -2,14 +2,14 @@
 
 <nav class="tabs__nav">
     <ul>
-        {{/*  {{ if not $tabs }}  */}}
-            {{/*  <p>No tabs data found.</p>  */}}
-        {{/*  {{ else }}  */}}
-            {{ range $index, $tab := $tabs }}
-                <li class="{{ if eq $index 0 }}current{{ end }}">
+		{{ range $index, $tab := $tabs }}
+			<li class="{{ if eq $index 0 }}current{{ end }}">
+				{{ if $tab.id }}
                     <a href="#{{ $tab.id }}">{{ $tab.id }}</a>
-                </li>
-            {{ end }}
-        {{/*  {{ end }}  */}}
+                {{ else if $tab.button }}
+                    {{ partial "common/button.html" (dict "text" $tab.button "url" $tab.href) }}
+                {{ end }}
+			</li>
+		{{ end }}
     </ul>
 </nav><!-- /.nav tabs__nav -->

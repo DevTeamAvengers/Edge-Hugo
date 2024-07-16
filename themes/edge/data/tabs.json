@@ -18,7 +18,7 @@
 					}
 				],
 				"outcome": "Page Displaying Hello World from EdgeWorkers.",
-				"content": "/js/helloWorld.js"
+				"content": "./js/helloWorld.js"
 			},
 			{
 				"id": "GeoLocation",
@@ -35,7 +35,7 @@
 					}
 				],
 				"outcome": "Location information about the client where the request originates.",
-				"content": "/js/onClientRequest.js"
+				"content": "./js/onClientRequest.js"
 			},
 			{
 				"id": "Commerce Categories",
@@ -52,7 +52,7 @@
 					}
 				],
 				"outcome": "Return JSON reponse for the selected item.",
-				"content": "/js/urlSearchParams.js"
+				"content": "./js/urlSearchParams.js"
 			},
 			{
 				"id": "JA3 Fingerprinting",
@@ -69,7 +69,7 @@
 					}
 				],
 				"outcome": "The EdgeWorkers code gets TLS ClientHello data from <strong>PMUSER_TLS_CLIENT_HELLO</strong> and sets JA3 Fingerprint to <strong>PMUSER_JA3_FINGERPRINT</strong>",
-				"content": "/js/ja3-fingerprinting.js"
+				"content": "./js/ja3-fingerprinting.js"
 			},
 			{
 				"id": "CSP",
@@ -90,13 +90,48 @@
 					}
 				],
 				"outcome": "For every request a nonce is generated, added to the CSP header, and then injected into the HTML source.",
-				"content": "/js/csp.js"
+				"content": "./js/csp.js"
 			}
 		]
 	  },
 	  {
 		"id": "EdgeKV",
-		"content": "Content for Tab 2"
+		"secondaryTabs": [
+			{
+				"id": "GeoLocation",
+				"title": "GeoLocation using EdgeWorkers",
+				"text": "This example implements a microservice GEO-Location API call that returns location information about the client where the request originates.",
+				"buttons": [
+					{
+						"href": "https://example.com",
+						"text": "View this example on Github"
+					},
+					{
+						"href": "https://example.com",
+						"text": "Click here to see the demo !!"
+					}
+				],
+				"outcome": "Location information about the client where the request originates.",
+				"content": "./js/onClientRequest.js"
+			},
+			{
+				"id": "Commerce Categories",
+				"title": "E-commerce Categories using EdgeWorkers",
+				"text": "This use-case is the projection forward of a whole endpoint from origin, perhaps useful for slow-changing and simple data that can be statically included in the code.This EdgeWorker tests for /commerce/categories in the URI path in order to act. It will then respond to a GET parameter named search by running a case-insensitive regex against each title and desc field, and a numeric comparison against each id, and returning an array of matching category entities, serialized as JSON. Because the response is generated at the Edge, origin will not be contacted, and the request will be fully resolved at the first Edge server that answers it.",
+				"buttons": [
+					{
+						"href": "https://example.com",
+						"text": "View this example on Github"
+					},
+					{
+						"href": "https://example.com",
+						"text": "Click here to see the demo !!"
+					}
+				],
+				"outcome": "Return JSON reponse for the selected item.",
+				"content": "./js/urlSearchParams.js"
+			}
+		]
 	  }
 	]
 }

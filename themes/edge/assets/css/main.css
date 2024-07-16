@@ -218,6 +218,7 @@ body {
 	font-size: var(--fz-base);
 	line-height: var(--lh-base);
 	color: var(--c-base);
+	background-color: #F8F9F9;
 }
 
 a {
@@ -649,6 +650,15 @@ main {
 	margin-bottom: 2rem;
 }
 
+.section-tabs .section__head h2 span {
+	color: #000;
+}
+
+.section-tabs .section__head img {
+	display: inline-block;
+	margin-bottom: 2rem;
+}
+
 /* ------------------------------------------------------------ *\
 	code toolbar
 \* ------------------------------------------------------------ */
@@ -666,4 +676,12 @@ main {
 .code-toolbar .toolbar button {
 	font-size: 1.4rem;
 	padding: .2rem .5rem;
+}
+
+/* ------------------------------------------------------------ *\
+	Helpers
+\* ------------------------------------------------------------ */
+
+.bg--gray {
+	background-color: #F0F1F3;
 }

@@ -1,0 +1,36 @@
+{
+	"tabs": [
+	  {
+		"id": "EdgeWorkers",
+		"text": "EdgeWorkers enables developers to create and deploy microservices across more than a quarter of a million edge servers deployed around the globe. When development teams activate code at the edge, they push data, insights, and logic closer to their end users.<br><br>EdgeWorkers helps your organization achieve high performance, customer-focused experiences without creating new challenges to your internal infrastructure or increased traffic at origin.",
+		"buttons": [
+			{
+				"href": "https://example.com",
+				"text": "Learn More"
+			},
+			{
+				"href": "https://example.com",
+				"text": "Getting Started Guide"
+			}
+		]
+	  },
+	  {
+		"id": "EdgeKV",
+		"text": "Supercharge your EdgeWorkers apps with a serverless key-value store.<br><br>EdgeKV is a key-value store database at the edge. It enables you to build data-driven EdgeWorker applications that require fast, frequent reads and infrequent writes.",
+		"buttons": [
+			{
+				"href": "https://example.com",
+				"text": "Learn More"
+			},
+			{
+				"href": "https://example.com",
+				"text": "Getting Started Guide"
+			}
+		]
+	  },
+	  {
+		"button": "Serverless Computing",
+		"href": "https://example.com"
+	  }
+	]
+}

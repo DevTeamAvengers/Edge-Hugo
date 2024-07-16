@@ -1,0 +1,13 @@
+{{ $tabs := .Site.Data.alternative_tabs.tabs }}
+
+<div class="tabs-alt js-tabs">
+	<div class="tabs__head">
+		{{ partial "tabs-nav.html" (dict "Tabs" $tabs) }}
+	</div><!-- /.tabs__head -->
+
+	<div class="tabs__body">
+		{{ range $index, $tab := $tabs }}
+			{{ partial "tab-content-alt.html" (dict "Index" $index "Tab" $tab) }}
+		{{ end }}
+	</div><!-- /.tabs__body -->
+</div><!-- /.tabs js-tabs -->

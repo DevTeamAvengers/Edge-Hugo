@@ -1,32 +1,35 @@
 {{ define "main" }}
-  	{{ .Content }}
-
-	{{ partial "section-posts.html" . }}
-
 	{{ partial "section-intro.html" (index .Site.Data.intros "intro-1") }}
 
-	<section class="section-tabs">
+	<section class="section-tabs bg--gray">
 		<div class="shell shell--large">
 			<header class="section__head">
 				<h2>USE CASES</h2>
 
-				{{ with .Resources.GetMatch "line-dec.webp" }}
-					{{ $img := . }}
-					{{ printf "Image found: %s" $img.Permalink | safeHTML }}
-
-					<img src="{{ .RelPermalink }}">
-				{{ end }}
+				<img src="/line-dec.webp" alt="Line Decoration">
 
 				<p>Checkout some of the use cases below for both EdgeWorkers & EdgeKV working in action.</p>
 			</header><!-- /.section__head -->
 
-			{{ partial "tabs.html" . }}
+			<div class="section__body">
+				{{ partial "tabs.html" . }}
+			</div><!-- /.section__body -->
 		</div><!-- /.shell -->
 	</section>
 
-	<section class="section-tabs bg--gray">
-		<div class="shell shell--large">
+	<section class="section-tabs">
+		<div class="shell">
+			<header class="section__head">
+				<h2><span>edge compute</span>  solutions</h2>
 
+				<img src="/line-dec.webp" alt="Line Decoration">
+
+				<p>Innovate in real time with the world’s largest serverless compute platform, Akamai puts your code <br> closer to your users.</p>
+			</header><!-- /.section__head -->
+
+			<div class="section__body">
+				{{ partial "alternative-tabs.html" . }}
+			</div><!-- /.section__body -->
 		</div><!-- /.shell -->
 	</section><!-- /.section- -->
 {{ end }}
