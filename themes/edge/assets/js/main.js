@@ -80,3 +80,11 @@ setCSSVariable('header-height', $('.header').outerHeight(), 'px');
 $(window).on('resize', function(e) {
 	setCSSVariable('header-height', $('.header').outerHeight(), 'px');
 });
+
+
+/**
+ * Handle Menu.
+ */
+$('.nav-btn').on('click', function(e) {
+	$('body').toggleClass('nav-open');
+});
